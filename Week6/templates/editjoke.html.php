@@ -1,0 +1,7 @@
+<form action="" method="post">
+    <input type="hidden" name="jokeid" value="<?=$joke['id']?>">
+    <label for='joketext'>Edit your joke here:</label>
+    <textarea name="joketext" id="joketext" cols="40" rows="3"><?=$joke['joketext']?>
+    </textarea>
+    <input type="submit" name="Submit" value="Save">
+</form>
