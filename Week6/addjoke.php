@@ -6,10 +6,13 @@ if(isset($_POST['joketext'])){
         $image = $_FILES['image']['name'];
         move_uploaded_file($_FILES['image']['tmp_name'], 'images/' . $image);
 
+        
+
         $sql = 'INSERT INTO joke SET 
         joketext = :joketext,
         jokedate = CURDATE(),
         authorid = 1,
+        categoryid = 1,
 
 
 

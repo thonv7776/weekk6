@@ -8,6 +8,8 @@
 
         <a href="editjoke.php?id=<?=$joke['id']?>">Edit</a>
 
+        <img height="100px" src="images/<?=htmlspecialchars($joke['image'], ENT_QUOTES, 'UTF-8'); ?>" /><br><br>
+
 
 
 
